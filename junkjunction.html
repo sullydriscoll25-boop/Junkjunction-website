@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Junk Junction</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+    color:#222;
+    line-height:1.6;
+}
+
+header{
+    background:linear-gradient(135deg,#1f7a1f,#ff8c00);
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+header img{
+    max-width:250px;
+    border-radius:12px;
+}
+
+header h1{
+    margin-top:15px;
+    font-size:3rem;
+}
+
+nav{
+    background:#111827;
+    padding:15px;
+    text-align:center;
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ff8c00;
+}
+
+.hero{
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url('https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:100px 20px;
+}
+
+.hero h2{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:1.2rem;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    background:#ff8c00;
+    color:white;
+    text-decoration:none;
+    padding:15px 30px;
+    border-radius:8px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#e67700;
+}
+
+section{
+    max-width:1200px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:30px;
+    font-size:2.5rem;
+    color:#1f7a1f;
+}
+
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.card{
+    flex:1;
+    min-width:250px;
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.card h3{
+    color:#1f7a1f;
+    margin-bottom:10px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:10px;
+}
+
+.quote-form{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+
+button{
+    background:#1f7a1f;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#166116;
+}
+
+.service-area{
+    text-align:center;
+}
+
+.service-area ul{
+    list-style:none;
+}
+
+.service-area li{
+    padding:8px;
+    font-size:1.1rem;
+}
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+@media(max-width:768px){
+    .hero h2{
+        font-size:2rem;
+    }
+
+    header h1{
+        font-size:2rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="logo.jpeg" alt="Junk Junction Logo">
+
+    <h1>Junk Junction</h1>
+
+    <p>
+        Junk Removal • Lawn Care • Pressure Washing
+    </p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#quote">Free Quote</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+    <h2>Graduation Party Cleanup Specialists</h2>
+
+    <p>
+        Fast, Affordable, and Reliable Cleanup Services
+        for Parties, Events, and Property Maintenance.
+    </p>
+
+    <a href="#quote" class="btn">
+        Get a Free Quote
+    </a>
+</section>
+
+<section id="about">
+    <h2 class="section-title">About Us</h2>
+
+    <p>
+        Junk Junction is owned and operated by Henry,
+        William, and Sully.
+    </p>
+
+    <br>
+
+    <p>
+        Henry is a student at Phillips Exeter Academy.
+        William attends Worcester State University,
+        and Sully attends Roger Williams University.
+    </p>
+
+    <br>
+
+    <p>
+        We specialize in affordable junk removal,
+        graduation party cleanup, lawn care,
+        and pressure washing throughout the local area.
+    </p>
+</section>
+
+<section id="services">
+    <h2 class="section-title">Our Services</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Junk Removal</h3>
+            <p>
+                Furniture removal, garage cleanouts,
+                trash hauling, and event cleanup.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Lawn Care</h3>
+            <p>
+                Mowing, leaf cleanup,
+                seasonal yard maintenance,
+                and property upkeep.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Pressure Washing</h3>
+            <p>
+                Driveways, patios, sidewalks,
+                decks, and exterior cleaning.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="pricing">
+    <h2 class="section-title">Pricing Examples</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Graduation Party Cleanup</h3>
+            <p>Starting at $125</p>
+        </div>
+
+        <div class="card">
+            <h3>Small Junk Removal</h3>
+            <p>Starting at $75</p>
+        </div>
+
+        <div class="card">
+            <h3>Pressure Washing</h3>
+            <p>Starting at $100</p>
+        </div>
+
+    </div>
+
+    <br>
+
+    <p style="text-align:center;">
+        Contact us for a customized quote.
+    </p>
+</section>
+
+<section id="gallery">
+    <h2 class="section-title">Before & After Results</h2>
+
+    <div class="gallery">
+
+        <div>
+            <img src="before.jpg" alt="Before Cleanup">
+            <h3 style="text-align:center;">Before</h3>
+        </div>
+
+        <div>
+            <img src="after.jpg" alt="After Cleanup">
+            <h3 style="text-align:center;">After</h3>
+        </div>
+
+    </div>
+
+    <p style="text-align:center; margin-top:20px;">
+        Replace these images with photos from your own jobs.
+    </p>
+</section>
+
+<section class="service-area">
+    <h2 class="section-title">Service Areas</h2>
+
+    <ul>
+        <li>Milford, Massachusetts</li>
+        <li>Mendon, Massachusetts</li>
+        <li>Upton, Massachusetts</li>
+        <li>Hopedale, Massachusetts</li>
+    </ul>
+</section>
+
+<section id="quote">
+    <h2 class="section-title">Get a Free Quote</h2>
+
+    <div class="quote-form">
+
+        <form>
+
+            <input
+                type="text"
+                placeholder="Full Name"
+                required
+            >
+
+            <input
+                type="email"
+                placeholder="Email Address"
+                required
+            >
+
+            <input
+                type="tel"
+                placeholder="Phone Number"
+                required
+            >
+
+            <textarea
+                rows="6"
+                placeholder="Tell us about your project..."
+            ></textarea>
+
+            <button type="submit">
+                Request Quote
+            </button>
+
+        </form>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+
+    <p style="text-align:center;">
+        📞 (774-200-7225)
+    </p>
+
+    <p style="text-align:center;">
+        ✉️ junkjunction2026@gmail.com
+    </p>
+
+    <p style="text-align:center;">
+        📸 Instagram: @JunkJunctionMA
+    </p>
+</section>
+
+<footer>
+    <h3>Junk Junction</h3>
+
+    <p>
+        Student-Owned & Operated
+    </p>
+
+    <p>
+        © 2026 Junk Junction. All Rights Reserved.
+    </p>
+</footer>
+
+</body>
+</html>
