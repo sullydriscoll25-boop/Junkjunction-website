@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Junk Junction</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#f4f4f4;color:#222;line-height:1.6}
+header{
+background:linear-gradient(135deg,#1f7a1f,#ff8c00);
+color:white;
+text-align:center;
+padding:40px 20px;
+}
+header img{max-width:260px;border-radius:12px}
+nav{background:#111827;padding:15px;text-align:center;position:sticky;top:0}
+nav a{color:white;text-decoration:none;margin:0 15px;font-weight:bold}
+.hero{
+padding:80px 20px;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url('https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=1200&q=80');
+background-size:cover;
+color:white;
+}
+.btn{
+display:inline-block;
+background:#ff8c00;
+color:white;
+padding:14px 28px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+margin-top:15px;
+}
+section{max-width:1200px;margin:auto;padding:60px 20px}
+.cards,.gallery{display:flex;gap:20px;flex-wrap:wrap}
+.card,.photo{
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 2px 8px rgba(0,0,0,.1);
+flex:1;
+min-width:250px;
+}
+.photo img{width:100%;border-radius:8px}
+.quote-form{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+input,textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:6px;
+}
+button{
+background:#1f7a1f;
+color:white;
+padding:12px 20px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+footer{
+background:#111827;
+color:white;
+text-align:center;
+padding:30px;
+}
+ul{padding-left:20px}
+</style>
+</head>
+<body>
+
+<header>
+<img src="logo.jpeg" alt="Junk Junction Logo">
+<h1>Junk Junction</h1>
+<p>Junk Removal • Lawn Care • Pressure Washing</p>
+</header>
+
+<nav>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#pricing">Pricing</a>
+<a href="#quote">Free Quote</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+<h2>Graduation Party & Event Cleanup Specialists</h2>
+<p>Affordable, student-run property services throughout the Blackstone Valley area.</p>
+<a href="#quote" class="btn">Get a Free Quote</a>
+</section>
+
+<section id="about">
+<h2>About Us</h2>
+<p>Junk Junction is operated by Henry, William, and Sully.</p>
+<p>Henry is a student at Phillips Exeter Academy. William attends Worcester State University, and Sully attends Roger Williams University.</p>
+<p>We focus on reliable service, fair pricing, and helping homeowners clean up after graduation parties, celebrations, and special events.</p>
+</section>
+
+<section id="services">
+<h2>Our Services</h2>
+<div class="cards">
+<div class="card">
+<h3>Junk Removal</h3>
+<p>Furniture removal, garage cleanouts, trash hauling, and event cleanup.</p>
+</div>
+<div class="card">
+<h3>Lawn Care</h3>
+<p>Mowing, leaf cleanup, yard maintenance, and seasonal services.</p>
+</div>
+<div class="card">
+<h3>Pressure Washing</h3>
+<p>Driveways, patios, walkways, decks, and exterior cleaning.</p>
+</div>
+</div>
+</section>
+
+<section id="pricing">
+<h2>Example Pricing</h2>
+<div class="cards">
+<div class="card">
+<h3>Graduation Party Cleanup</h3>
+<p>Starting at $125</p>
+</div>
+<div class="card">
+<h3>Small Junk Removal</h3>
+<p>Starting at $75</p>
+</div>
+<div class="card">
+<h3>Pressure Washing</h3>
+<p>Starting at $100</p>
+</div>
+</div>
+<p><em>Contact us for a custom quote. Prices vary by project size.</em></p>
+</section>
+
+<section>
+<h2>Before & After Results</h2>
+<div class="gallery">
+<div class="photo">
+<img src="https://via.placeholder.com/500x300?text=Before+Cleanup" alt="Before">
+<h3>Before</h3>
+</div>
+<div class="photo">
+<img src="https://via.placeholder.com/500x300?text=After+Cleanup" alt="After">
+<h3>After</h3>
+</div>
+</div>
+<p>Replace these placeholders with your own project photos.</p>
+</section>
+
+<section>
+<h2>Service Areas</h2>
+<ul>
+<li>Milford, MA</li>
+<li>Mendon, MA</li>
+<li>Upton, MA</li>
+<li>Hopedale, MA</li>
+</ul>
+</section>
+
+<section id="quote">
+<h2>Get a Free Quote</h2>
+<div class="quote-form">
+<form>
+<input type="text" placeholder="Your Name">
+<input type="email" placeholder="Your Email">
+<input type="tel" placeholder="Phone Number">
+<textarea rows="5" placeholder="Describe your project"></textarea>
+<button type="submit">Request Quote</button>
+</form>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+<p><strong>Phone:</strong> (Your Number Here)</p>
+<p><strong>Email:</strong> (Your Email Here)</p>
+<p><strong>Instagram:</strong> @JunkJunctionMA</p>
+</section>
+
+<footer>
+<p>© 2026 Junk Junction | Student-Owned & Operated</p>
+</footer>
+
+</body>
+</html>
